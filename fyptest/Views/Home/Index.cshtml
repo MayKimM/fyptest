@@ -1,0 +1,40 @@
+
+@{
+  ViewBag.Title = "Index";
+  Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<br />
+<br />
+<br />
+<div id="app">
+  <h3>@ViewBag.Message</h3>
+  {{ vueMessage }}
+  <br />
+  <transition>
+    <router-view></router-view>
+  </transition>
+  {{ secMessage }}
+  <app v-bind:time="new Date()"></app>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+@section foot {
+  <script src="~/Scripts/bundle/home.js"></script>
+}
